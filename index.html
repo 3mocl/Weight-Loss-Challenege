@@ -2,112 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Weight Loss Challenge Agreement</title>
   <style>
-    :root {
-      --bg-color: #f4f7fa;
-      --primary: #003366;
-      --accent: #c59d5f;
-      --text: #333;
-      --border: #d1d9e6;
-    }
-
     body {
-      font-family: 'Georgia', serif;
-      background: var(--bg-color);
-      color: var(--text);
-      padding: 3rem 1.5rem;
-      max-width: 900px;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      padding: 40px;
+      max-width: 800px;
       margin: auto;
     }
 
-    h1 {
+    h1, h2 {
       text-align: center;
-      color: var(--primary);
+    }
+
+    h1 {
       font-size: 2rem;
-      margin-bottom: 1.5rem;
-      border-bottom: 2px solid var(--accent);
-      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 10px;
     }
 
     h2 {
-      color: var(--primary);
-      font-size: 1.25rem;
+      font-size: 1.4rem;
       margin-top: 2rem;
-      border-left: 4px solid var(--accent);
-      padding-left: 0.6rem;
-    }
-
-    p, li {
-      font-family: 'Segoe UI', sans-serif;
-      font-size: 1rem;
-      line-height: 1.6;
-    }
-
-    ul {
-      padding-left: 1.25rem;
     }
 
     .section {
-      background: white;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.2rem 1.5rem;
-      margin-top: 1.5rem;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.03);
+      margin-bottom: 2rem;
     }
 
-    .signature-line {
-      margin-top: 3rem;
-    }
-
-    .signature {
+    .signature-block {
       display: flex;
       justify-content: space-between;
-      gap: 2rem;
-      margin-top: 2rem;
-    }
-
-    .signature div {
-      width: 48%;
-    }
-
-    .label {
-      font-size: 0.9rem;
-      color: var(--primary);
-      font-weight: bold;
-      margin-bottom: 0.3rem;
-    }
-
-    input {
-      width: 100%;
-      padding: 0.3rem;
-      font-size: 1rem;
-      border: none;
-      border-bottom: 2px solid var(--accent);
-      background-color: transparent;
-      margin-bottom: 1rem;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 0.85rem;
-      color: #666;
       margin-top: 3rem;
+      gap: 20px;
+      flex-wrap: wrap;
     }
 
-    .highlight {
+    .sig-container {
+      width: 48%;
+      border-top: 2px solid #fff;
+      padding-top: 10px;
+      text-align: center;
+    }
+
+    canvas {
+      width: 100%;
+      height: 150px;
+      border: 1px solid #ccc;
+      background-color: white;
+      cursor: crosshair;
+    }
+
+    button {
+      margin-top: 10px;
+      margin-right: 10px;
+      padding: 8px 14px;
+      border: none;
+      background-color: #0ff;
+      color: #000;
       font-weight: bold;
-      color: var(--accent);
+      border-radius: 4px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    button:hover {
+      background-color: #00cccc;
+    }
+
+    img {
+      margin-top: 10px;
+      max-width: 100%;
+      border: 1px solid #fff;
+      display: block;
+      height: 150px;
+      object-fit: contain;
     }
   </style>
 </head>
 <body>
+
   <h1>Weight Loss Challenge Agreement</h1>
 
   <div class="section">
-    <p>This Agreement is made on this <span class="highlight">___</span> day of <span class="highlight">____________</span>, 2025, between:</p>
+    <p>This Agreement is made on this ___ day of ____________, 2025, between:</p>
     <ul>
       <li><strong>Clive Moras</strong> (“Clive”)</li>
       <li><strong>Thien An Bui</strong> (“Bui”)</li>
@@ -118,68 +101,140 @@
   <div class="section">
     <h2>1. Challenge Terms</h2>
     <ul>
-      <li><span class="highlight">Goal:</span> First to reach and maintain their target weight for <strong>7 consecutive days</strong> wins.</li>
-      <li><span class="highlight">Target Weights:</span>
+      <li><strong>Goal:</strong> First to reach and maintain their target weight for <strong>7 consecutive days</strong> wins.</li>
+      <li><strong>Targets:</strong>
         <ul>
-          <li>Clive: <strong>175 lbs → 155 lbs</strong></li>
-          <li>Bui: <strong>175 lbs → 165 lbs</strong></li>
+          <li>Clive: from <strong>175 lbs</strong> to <strong>155 lbs</strong></li>
+          <li>Bui: from <strong>175 lbs</strong> to <strong>165 lbs</strong></li>
         </ul>
       </li>
-      <li><span class="highlight">Reward:</span> The losing participant pays the winner <strong>$100 USD</strong> within 7 days of challenge completion.</li>
+      <li><strong>Reward:</strong> Loser pays winner <strong>$100 USD</strong> within <strong>7 days</strong> of challenge completion.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>2. Weigh-In Protocol</h2>
     <ul>
-      <li><strong>Bui:</strong> Must submit <em>daily fasted weight</em> (morning before food or drink).</li>
-      <li><strong>Clive:</strong> Will submit weight as often as possible, acknowledging measurements may not be fasted. This potential disadvantage is accepted by both parties.</li>
+      <li><strong>Bui:</strong> Sends <strong>daily fasted weights</strong> (morning, before food/drink).</li>
+      <li><strong>Clive:</strong> Sends weights <strong>as often as possible</strong>, not necessarily fasted. This disadvantage is acknowledged and agreed upon by both parties.</li>
     </ul>
   </div>
 
   <div class="section">
     <h2>3. Verification</h2>
-    <ul>
-      <li>Participants agree to act in <strong>good faith</strong> and with <strong>honesty</strong>.</li>
-      <li>Upon request, weights must be supported by a timestamped photo showing scale readings. Visible body is optional but encouraged for fairness.</li>
-    </ul>
+    <p>Participants agree to act <strong>honestly and in good faith</strong>. Verification may include timestamped scale photos with visible digits. Body inclusion optional but encouraged for transparency.</p>
   </div>
 
   <div class="section">
     <h2>4. Disputes & Termination</h2>
-    <ul>
-      <li>Disputes will be resolved informally or through a mutually agreed third party.</li>
-      <li>This Agreement may be terminated with written consent from both Participants.</li>
-    </ul>
+    <p>Disputes will be resolved <strong>informally or through a mutually agreed third party</strong>. The agreement may be terminated at any time by <strong>mutual written consent</strong>.</p>
   </div>
 
   <div class="section">
     <h2>5. Governing Law</h2>
-    <p>This Agreement shall be governed by the laws of the state in which the winning Participant resides at the end of the challenge.</p>
+    <p>This agreement is governed by the laws of the <strong>state where the winner resides</strong> at the conclusion of the challenge.</p>
   </div>
 
-  <div class="signature-line">
-    <h2>Signatures</h2>
-    <p>By signing below, both Participants confirm that they agree to all terms voluntarily and in good faith.</p>
+  <div class="section">
+    <p>By entering this agreement, both Participants do so <strong>voluntarily and in good faith</strong>:</p>
 
-    <div class="signature">
-      <div>
-        <div class="label">Clive Moras</div>
-        <input type="text" placeholder="Signature" />
-        <div class="label">Date</div>
-        <input type="text" placeholder="Date" />
+    <div class="signature-block">
+      <div class="sig-container">
+        <p><strong>Clive Moras</strong></p>
+        <canvas id="cliveCanvas" width="400" height="150"></canvas><br />
+        <button onclick="clearCanvas('cliveCanvas')">Clear</button>
+        <button onclick="saveSignature('cliveCanvas', 'cliveSigImg')">Save</button>
+        <img id="cliveSigImg" alt="Clive's signature preview" />
       </div>
-      <div>
-        <div class="label">Thien An Bui</div>
-        <input type="text" placeholder="Signature" />
-        <div class="label">Date</div>
-        <input type="text" placeholder="Date" />
+
+      <div class="sig-container">
+        <p><strong>Thien An Bui</strong></p>
+        <canvas id="buiCanvas" width="400" height="150"></canvas><br />
+        <button onclick="clearCanvas('buiCanvas')">Clear</button>
+        <button onclick="saveSignature('buiCanvas', 'buiSigImg')">Save</button>
+        <img id="buiSigImg" alt="Bui's signature preview" />
       </div>
     </div>
   </div>
 
-  <div class="footer">
-    This agreement isn't a friendly wager between individuals and intended to constitute a legally binding contract in a court of law.
-  </div>
+  <script>
+    function setupCanvas(canvasId) {
+      const canvas = document.getElementById(canvasId);
+      const ctx = canvas.getContext('2d');
+
+      // Fill white background initially
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+      ctx.strokeStyle = 'black';
+      ctx.lineWidth = 2;
+      ctx.lineCap = 'round';
+
+      let drawing = false;
+
+      canvas.addEventListener('mousedown', (e) => {
+        drawing = true;
+        ctx.beginPath();
+        ctx.moveTo(e.offsetX, e.offsetY);
+      });
+
+      canvas.addEventListener('mouseup', () => {
+        drawing = false;
+      });
+
+      canvas.addEventListener('mouseout', () => {
+        drawing = false;
+      });
+
+      canvas.addEventListener('mousemove', (e) => {
+        if (!drawing) return;
+        ctx.lineTo(e.offsetX, e.offsetY);
+        ctx.stroke();
+      });
+    }
+
+    function clearCanvas(canvasId) {
+      const canvas = document.getElementById(canvasId);
+      const ctx = canvas.getContext('2d');
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.fillStyle = 'white';
+      ctx.fillRect(0, 0, canvas.width, canvas.height);
+    }
+
+    function saveSignature(canvasId, imgId) {
+      const canvas = document.getElementById(canvasId);
+      const img = document.getElementById(imgId);
+      const dataURL = canvas.toDataURL();
+      img.src = dataURL;
+      localStorage.setItem(imgId, dataURL);
+    }
+
+    window.onload = function () {
+      ['cliveSigImg', 'buiSigImg'].forEach(id => {
+        const dataURL = localStorage.getItem(id);
+        if (dataURL) {
+          const img = document.getElementById(id);
+          img.src = dataURL;
+
+          // Also draw the signature back onto the canvas
+          const canvasId = id === 'cliveSigImg' ? 'cliveCanvas' : 'buiCanvas';
+          const canvas = document.getElementById(canvasId);
+          const ctx = canvas.getContext('2d');
+          const image = new Image();
+          image.onload = () => {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.fillStyle = 'white';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            ctx.drawImage(image, 0, 0);
+          };
+          image.src = dataURL;
+        }
+      });
+
+      setupCanvas('cliveCanvas');
+      setupCanvas('buiCanvas');
+    };
+  </script>
+
 </body>
 </html>
